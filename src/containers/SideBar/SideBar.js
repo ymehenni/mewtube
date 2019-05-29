@@ -3,6 +3,7 @@ import { Menu, Divider } from 'semantic-ui-react';
 import './SideBar.scss';
 import SideBarItem from './SideBarItem/SideBarItem';
 import SideBarHeader from './SideBarHeader/SideBarHeader';
+import Subscriptions from './Subscriptions/Subscriptions';
 
 export default class SideBar extends React.Component {
   render() {
@@ -17,6 +18,7 @@ export default class SideBar extends React.Component {
         <SideBarItem label="Watch later" icon="clock" />
         <SideBarItem label="Liked videos" icon="thumbs up" />
         <Divider />
+        <Subscriptions />
         <SideBarHeader title="More from Mewtube" />
         <SideBarItem label="Movies and Shows" icon="film" />
         <Divider />
